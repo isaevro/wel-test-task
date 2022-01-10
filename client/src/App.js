@@ -70,7 +70,7 @@ function App() {
         setTextSelect={setTextSelect}></Filters>
       <Pagination>
         <Pagination.First onClick={() => handlePagination(0)} />
-        {[...Array(pages <= 15 ? pages : 15)].map((e, i) => (
+        {[...Array(pages)].map((e, i) => (
           <Pagination.Item
             active={currentPage === i ? true : false}
             key={i}
